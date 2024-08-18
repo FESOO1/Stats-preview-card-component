@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 150px;
+    min-height: 100vh;
 }
 
 /* CARD */
@@ -106,4 +106,18 @@ main {
     text-transform: uppercase;
     font-family: var(--f-lexend-deca);
     font-weight: 400;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1250px) {
+    main {
+        width: 900px;
+    }
+    .main-left {
+        padding: 30px;
+    }
+    .main-left > h1 {
+        font-size: 2.2rem;
+    }
 }
