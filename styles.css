@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --f-inter: "Inter", sans-serif;
+    --f-lexend-deca: "Lexend Deca", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 150px;
+}
+
+/* CARD */
+
+main {
+    width: 1100px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+/* CARD LEFT */
+
+.main-left {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-left > h1 {
+    color: white;
+    font-family: var(--f-inter);
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.main-left > h1 > span {
+    color: hsl(277, 64%, 61%);
+}
+
+.main-left > p {
+    margin-top: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: var(--f-inter);
+    font-weight: 400;
+    padding-right: 50px;
+    line-height: 25px;
+}
+
+
+/* CARD RIGHT */
+
+.main-right {
+    background: url(./images/image-header-desktop.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-right::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 100%, 31%, 0.49);
+    position: absolute;
+}
+
+.main-left-inner-grid-text {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    column-gap: 55px;
+}
+
+.grid-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.grid-inner > h2 {
+    color: white;
+    font-family: var(--f-inter);
+    font-weight: 700;
+}
+
+.grid-inner > h5 {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-family: var(--f-lexend-deca);
+    font-weight: 400;
+}
