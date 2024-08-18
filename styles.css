@@ -120,4 +120,11 @@ main {
     .main-left > h1 {
         font-size: 2.2rem;
     }
+    .main-left > p {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+
 }
